@@ -36,3 +36,141 @@
     transform: rotate(360deg);
   }
 }
+
+/*  my css */
+body{
+    margin:0;
+    background:linear-gradient(-45deg,#ee7742,#e73c7e,#23a6d5,#2345ab);
+    animation: color-change 5s ease infinite;
+    background-size:400% 400%;
+    animation:gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+@keyframes color-change{
+    0% { color: black; }
+    50% { color: green; }
+    100% { color: red; }
+}
+
+label{
+    margin-top:20px;
+    color:black;
+    font-size:large;
+}
+
+.Add-Button{
+    background-color:rgb(10,65,50); /* Green */
+    border: none;
+    color:white;
+    padding: 10px 28px;
+    text-align:center;
+    font-size:30px;
+    border-radius:5px;
+}
+
+.Submit-Button{
+    background-color:black;
+    border: none;
+    color:white;
+    padding: 10px 28px;
+    text-align:center;
+    font-size:40px;
+    margin-left:10px;
+}
+
+.Edit-Button{
+    background-color:#ff4e00;
+    border: none;
+    color:white;
+    padding: 10px 28px;
+    text-align:center;
+    font-size:40px;
+    margin-left:10px;
+}
+
+.Button{
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    margin-buttom:10px;
+}
+
+.upload-data{
+    displat:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.panel-heading{
+    displat:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:20%;
+}
+
+.upload-btn-wrapper{
+    position:relative;
+    overflow:hidden;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    white-space: unset;
+}
+.file-btn{
+    border:2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius:8px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.indexpagecard{
+    width:auto;
+    height:auto;
+    background-color:white;
+    margin:auto;
+    display:block;
+    margin-top:60px;
+    opacity:0.5;
+    padding-top:10px;
+    padding-left:20px;
+    padding-right:20px;
+    border-style:outset;
+    border-left:50px solid pink;
+}
+.footer{
+    margin-left:10px;
+    bottom:0;
+    margin-right:10px;
+    height:10rem;
+    align-items: center;
+    padding-top:50px;
+    margin-top:50px;
+    color:black;
+    opacity: 0.06;
+}
+.upload-btn-wrapper input[type=file]{
+    font-size: 100px;
+    position:absolute;
+    left:0;
+    top:0;
+    opacity:0;
+}
+.btn{
+    margin-bottom:10px;
+}
